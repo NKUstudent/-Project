@@ -1,0 +1,15 @@
+[
+	{
+		"imgs":[
+			{"name":"Back1", "url":"./resource/images/Back1.png"},
+			{"name":"Bird", "url":"./resource/images/Bird.png"},
+			{"name":"Flash", "url":"./resource/images/Flash.png"},
+			{"name":"Logo", "url":"./resource/images/Logo.png"},
+			{"name":"Number", "url":"./resource/images/Number.png"},
+			{"name":"Land2", "url":"./resource/images/Road2.png"},
+            {"name":"Pipe1", "url":"./resource/images/Pipe1.png"},
+            {"name":"Pipe2", "url":"./resource/images/Pipe2.png"},
+			{"name":"Bomb", "url":"./resource/images/Bomb.png"}
+		]
+	}
+]
