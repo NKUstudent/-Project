@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3288</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+    <!-- 导入像素字体 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    
+    <div class="navbar">
+        <div class="logo">
+            <img src="iamges/logo.png" alt="logo">
+        </div>
+        <a href="#home">首页</a>
+        <div class="dropdown">
+            <p>关于我们</p>
+            
+            <div class="dropdown-content">
+                <p>
+                在flash不能使用了的情况下，童年的小游戏网站逐渐没落，退出了视野，如4399小游戏平台让人十分怀念。3288项目组通过分工复现了一些小游戏并做成集合，命名3288.
+                </p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <p>分类</p>
+            <div class="dropdown-content">
+                <p>动作</p>
+                <p>射击</p>
+                <p>益智</p>
+                <p>休闲</p>
+            </div>
+        </div>
+        <div class="dropdown">
+            <p>联系我们</p>
+            <div class="dropdown-content">
+                <img src="iamges/wechat.jpg" alt="Wechat">
+            </div>
+        </div>
+    </div>
+
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="iamges/all.png" alt="Slide 5">
+            </div>
+            <div class="mySlides fade">
+                <video width="300" height=auto controls autoplay="autoplay" loop>
+                    <source src="video/bird.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="mySlides fade">
+                <video width="300" height=auto controls autoplay="autoplay" loop>
+                    <source src="video/bean.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="mySlides fade">
+                <video width="300" height=auto controls autoplay="autoplay" loop>
+                    <source src="video/plane.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="mySlides fade">
+                <video width="300" height=auto controls autoplay="autoplay" loop>
+                    <source src="video/young.mp4" type="video/mp4">
+                </video>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+        </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    </script>
+    <script>
+    </script>
+            <div class="icon-container">
+                <div class="icon-item">
+                    <a href="FlappyBird/index.html">
+                        <img src="iamges/bird.jpg" alt="图标1" class="icon">
+                    </a>
+                    <p>小鸟飞飞</p>
+                </div>
+                <div class="icon-item">
+                    <a href="GameBee-master/index.html" >
+                        <img src="iamges/plane.jpg" alt="图标2" class="icon">
+                    </a>
+                    <p>飞机大战</p>
+                </div>
+                <div class="icon-item">
+                    <a href="pacman-main/index.html">
+                        <img src="iamges/bean.jpg" alt="图标3" class="icon">
+                    </a>
+                    <p>疯狂吃豆人</p>
+                </div>
+                <div class="icon-item">
+                    <a href="youngyoung无敌版/youngyoung.html">
+                        <img src="iamges/young.jpg" alt="图标4" class="icon">
+                    </a>
+                    <p>young了个young无敌版</p>
+                </div>
+                <div class="icon-item">
+                    <a href="GoogleDino/index.html">
+                        <img src="iamges/敬请期待.jpg" alt="图标4" class="icon">
+                    </a>
+                    <p>敬请期待</p>
+                </div>
+            </div>
+
+    
+</body>
+<footer class="footer">
+    &copy; 2024 3288 Project Team. All rights reserved.
+</footer>
+</html>
