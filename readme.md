@@ -267,10 +267,6 @@ FlappyBird 小游戏是一个基于 HTML5 Canvas 和 JavaScript 实现的简单�
 1. 下载或克隆本仓库到本地。
 2. 在支持 HTML5 Canvas 的现代浏览器中打开 `index.html` 文件即可开始游戏。
 
-#### 预览
-
-![Pac-Man 游戏预览](./images/preview.png)
-
 #### 技术栈
 
 - **前端**：HTML5, CSS, JavaScript
@@ -287,8 +283,8 @@ FlappyBird 小游戏是一个基于 HTML5 Canvas 和 JavaScript 实现的简单�
 
 #### 联系方式
 
-如有任何问题或建议，请联系我们：你的邮箱@example.com
+如有任何问题或建议，请联系我们：3097914921@qq.com
 
 ---
 
-欢迎体验，希望你享受这个经典的游戏！
+欢迎体验，希望你享受这个有趣的游戏！
